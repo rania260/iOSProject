@@ -43,7 +43,7 @@ struct Signup: View {
                 CustomTF(sfIcon: "person", hint: "Full name", value: $fullName)
                 CustomTF(sfIcon: "lock", hint: "Password", isPassword: true , value: $password)
                     .padding(.top, 5)
-     
+                
                 
                 //Signin button
                 GradientButton(title: "Continue", icon: "arrow.right") {
@@ -78,16 +78,16 @@ struct Signup: View {
     }
     
     func register() {
-            Auth.auth().createUser(withEmail: emailID, password: password) { (result, error) in
-                if error != nil {
-                    print(error?.localizedDescription ?? "")
-                } else {
-                    print("success registration")
-                    
-
-                }
+        Auth.auth().createUser(withEmail: emailID, password: password) { (result, error) in
+            if error != nil {
+                print("regisration problem: \(String(describing: error?.localizedDescription))")
+            } else {
+                print("success registration")
+                UserHelper.saveUser(email: emailID)
+                UserHelper.navigateToHome()
             }
         }
+    }
 }
 
 #Preview {

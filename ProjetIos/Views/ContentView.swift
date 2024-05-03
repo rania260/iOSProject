@@ -15,9 +15,7 @@ struct ContentView: View {
             Login(showSignup: $showSignup)
                 .navigationDestination(isPresented: $showSignup){
                     Signup(showSignup: $showSignup)
-                    
                 }
-            
         }
         .overlay{
             CircleView()

@@ -82,19 +82,25 @@ struct Login: View {
         
     }
     
-    func login() {
-            Auth.auth().signIn(withEmail: emailID, password: password) { (result, error) in
-                if error != nil {
-                    print(error?.localizedDescription ?? "")
-                } else {
-                    print("success login")
-                    UserDefaults.standard.set(emailID,forKey: "email")
-                    
-
-                }
+    private func login() {
+        Auth.auth().signIn(withEmail: emailID, password: password) { (result, error) in
+            if error != nil {
+                print(error?.localizedDescription ?? "")
+            } else {
+                print("success login")
+                UserHelper.saveUser(email: emailID)
+                UserHelper.navigateToHome()
             }
         }
+    }
     
+    private func openHome()
+    {
+        if let window = UIApplication.shared.windows.first {
+            window.rootViewController = UIHostingController(rootView : HomeView())
+            window.makeKeyAndVisible()
+        }
+    }
 }
 
 

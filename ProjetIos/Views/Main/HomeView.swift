@@ -32,7 +32,7 @@ struct HomeView: View {
                     }
                 }
             }.onAppear() {
-                Api().loadData(url: "https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=55") { games in
+                GamesApi().loadData(url: "https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=55") { games in
                     self.games = games
                 }
             }

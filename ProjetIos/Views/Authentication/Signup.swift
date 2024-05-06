@@ -44,7 +44,6 @@ struct Signup: View {
                 CustomTF(sfIcon: "lock", hint: "Password", isPassword: true , value: $password)
                     .padding(.top, 5)
                 
-                
                 //Signin button
                 GradientButton(title: "Continue", icon: "arrow.right") {
                     register()

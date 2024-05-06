@@ -93,14 +93,6 @@ struct Login: View {
             }
         }
     }
-    
-    private func openHome()
-    {
-        if let window = UIApplication.shared.windows.first {
-            window.rootViewController = UIHostingController(rootView : HomeView())
-            window.makeKeyAndVisible()
-        }
-    }
 }
 
 

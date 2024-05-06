@@ -14,6 +14,7 @@
 		AC5D72792BE55B320002E2B3 /* UserHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5D72782BE55B320002E2B3 /* UserHelper.swift */; };
 		AC754CFA2BE9674900B8B2BD /* Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC754CF92BE9674900B8B2BD /* Games.swift */; };
 		AC754CFD2BE97F3300B8B2BD /* GamesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC754CFC2BE97F3300B8B2BD /* GamesApi.swift */; };
+		AC754CFF2BE9801300B8B2BD /* GameDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC754CFE2BE9801300B8B2BD /* GameDetailsView.swift */; };
 		AC9704F52BE4DE3200D72547 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AC9704F42BE4DE3200D72547 /* FirebaseAuth */; };
 		ACB22A4B2BDE8D1A0075CB3F /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB22A4A2BDE8D1A0075CB3F /* Login.swift */; };
 		ACB7AB8E2BE3F9C0001FD8FA /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB7AB8D2BE3F9C0001FD8FA /* GradientButton.swift */; };
@@ -51,6 +52,7 @@
 		AC5D72782BE55B320002E2B3 /* UserHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHelper.swift; sourceTree = "<group>"; };
 		AC754CF92BE9674900B8B2BD /* Games.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Games.swift; sourceTree = "<group>"; };
 		AC754CFC2BE97F3300B8B2BD /* GamesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesApi.swift; sourceTree = "<group>"; };
+		AC754CFE2BE9801300B8B2BD /* GameDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailsView.swift; sourceTree = "<group>"; };
 		AC9704F12BE4DBF800D72547 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ACB22A4A2BDE8D1A0075CB3F /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		ACB7AB8D2BE3F9C0001FD8FA /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				AC5D72762BE557A40002E2B3 /* HomeView.swift */,
+				AC754CFE2BE9801300B8B2BD /* GameDetailsView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				AC07692A2BE10774006EFDBE /* View&Extensions.swift in Sources */,
 				AC754CFD2BE97F3300B8B2BD /* GamesApi.swift in Sources */,
 				ACFC90BC2BDBCE67009C3B82 /* ContentView.swift in Sources */,
+				AC754CFF2BE9801300B8B2BD /* GameDetailsView.swift in Sources */,
 				AC5D72792BE55B320002E2B3 /* UserHelper.swift in Sources */,
 				AC5D72772BE557A40002E2B3 /* HomeView.swift in Sources */,
 				AC033D542BE3D32600CA1B7F /* CustomTF.swift in Sources */,

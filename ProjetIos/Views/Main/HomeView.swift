@@ -12,7 +12,7 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             List(games) { game in
-                NavigationLink(destination: Text("\(game.title)")) {
+                NavigationLink(destination: GameDetailsView(game: game)) {
                     HStack(spacing: 30) {
                         AsyncImage(url: URL(string: game.thumb) ?? URL(string: "https://loremflickr.com/640/360")!) { image in
                             image
